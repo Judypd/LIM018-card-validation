@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Crédito Válida</title>
+</head>
+<body>
+    <section>
+        <h1>Escoge tu plan</h1>
+        <input type="radio" name="plan" id="1m">1 mes por 15 soles
+        <input type="radio" name="plan" id="6m">6 meses por 81 soles
+        <input type="radio" name="plan" id="1y">1 año por 153 soles
+    </section>
+    <section>
+        <h1>Adquiere tu plan</h1>
+        <form>
+            <label for="fname">Nombre y Apellido</label>
+            <input type="text" name="fname" id="fname">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email">
+            <label for="cardnumber">Número de Tarjeta</label>
+            <input type="text" name="cardnumber" id="cardnumber">
+            <label for="expiration">Vencimiento</label>
+            <input type="date" name="expiration" id="expiration">
+            <label for="codecvv">CVV</label>
+            <input type="number" name="codecvv" id="codecvv" maxlength="3">
+            <input type="button" value="Validar">
+            <input type="reset" value="Limpiar">
+            <input type="button" value="Comprar">
+        </form>
+    </section>
+    <footer>
+        <p>Judy Palacios</p>
+        <p>palacios.carolina0@gmail.com</p>
+    </footer>
+</body>
+</html>
