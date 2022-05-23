@@ -1,0 +1,128 @@
+body {
+    background-image: url(caleydo.jpg);
+    margin: 0px;
+        
+}
+
+.headTitle {
+    color: rgba(218, 37, 113, 1);
+    text-shadow: 2px 2px 2px black;
+    font-size: 12vw;
+    margin: 1em;
+}
+
+.otherTitle {
+    color:AliceBlue;
+    text-shadow: 4px 4px 3px black;
+    font-size: 3.3vw;
+    margin: 1em 2em;
+}
+
+.books {
+    color: rgba(181, 182, 251, 1);
+    text-shadow: 2px 2px 2px black;
+    font-size:10vw;
+}
+
+button {
+    background-color: rgba(200, 7, 134, 1);
+    color: rgba(182, 223, 245, 1);
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-right: 8vw;
+    border-radius: 50px;
+    border-style:double;
+    float: right;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(62, 55, 55, 1);
+}
+
+#hidden {
+    flex-flow:wrap;
+	display: grid;
+	justify-content: center;  
+}
+
+.hiddenBox {
+    display: none;
+}
+
+
+.title {
+    background-color:rgba(162, 247, 247, 0.77);
+    color:AliceBlue;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin-top: 0%;
+    padding: 8px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+
+.block1,.block2 {
+    background-color: rgba(62, 55, 55, 1);
+    
+}
+
+.block1 {
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    margin-bottom: 0px;
+
+}
+.block2 {
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0px;
+}
+
+.inputs {
+    color:AliceBlue;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 20px;    
+}
+
+input[type=radio] {
+    accent-color: rgba(181, 182, 251, 1);    
+}
+
+.formBox {
+    align-content:center;
+    width:50em;
+    flex-flow:wrap;
+	display: grid;
+	justify-content: center;
+    text-align: center;
+    
+}
+
+.forms {
+    background-color: rgba(181, 182, 251, 1);
+    width:18em;
+    height: 21em;
+    padding: 20px;
+    display:ruby-text-container;
+    flex-direction:column;
+    border-radius: 30px 30px 30px 30px;        
+}
+
+
+.rights {
+    font-style: italic;
+}
+
+footer {
+    background-color: #3E3737;
+    color:AliceBlue;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0vw;
+    margin-left: 0px;
+    padding: 1px;   
+}

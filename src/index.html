@@ -2,20 +2,61 @@
 <html>
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>CaleydoBooks</title>
       <link rel="stylesheet" href="style.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
   <body>   
       <section>
-          <h1>CaleydoBooks</h1>
-          <h2>Lleva contigo los libros de tus sueños</h2>
-          <button>Yo quiero!</button>
-          <h2>Planes con descuento!</h2>
+          <h1 class="headTitle">Caleydo<span class="books">Books</span></h1>
+          <button id="enter">Yo quiero!</button>
+          <h3 class="otherTitle">Lleva contigo los libros de tus sueños</h3>
+          <h3 class="otherTitle">Planes con descuento!</h3>
       </section>
+      
+      <main id="hidden" class="hiddenBox">
+      <section class="block1">
+        <h1 class="title">Escoge tu plan</h1>
+        <div class="inputs">
+          <input type="radio" name="plan" id="1m">
+          <label for="1m">1 mes por 15 soles</label><br>
+          <input type="radio" name="plan" id="6m">
+          <label for="6m">6 meses por 81 soles</label><br>
+          <input type="radio" name="plan" id="1y">
+          <label for="6m">1 año por 153 soles</label><br>
+        </div>
+      </section>
+
+      <section class="block2">
+        <h1 class="title">Adquiere tu plan</h1>
+        <div class="formBox">
+            <form class="forms">
+                
+                <label for="fname">Nombre y Apellido</label><br>
+                <input type="text" name="fname" id="fname"><br>
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="cardnumber">Número de Tarjeta</label><br>
+                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" required><br>
+                <div id="theValidation"></div><br>
+                <label for="expiration">Vencimiento</label><br>
+                <input type="date" name="expiration" id="expiration"><br>
+                <label for="codecvv">Código de Seguridad</label><br>
+                <input type="text" placeholder="cvv" name="codecvv" id="codecvv"><br>
+                <input type="button" id="valid" value="Validar"><br>
+                <input type="reset" value="Limpiar"><br>
+                <input type="button" value="Comprar"><br>
+              
+            </form>
+        </div>
+      </section>
+      </main>
       <footer>
-          <p>Judy Palacios</p>
-          <p>palacios.carolina0@gmail.com</p>
+          <p>Autor: Judy Palacios</p>
+          <a href="mailto:palacios.carolina0@gmail.com">palacios.carolina0@gmail.com</a>
+          <p class="rights">Todos los derechos reservados &copy</p>
       </footer>
-    <script src="index.js" type="module"></script>
+  <script src="index.js" type="module"></script>
   </body>
 </html>
