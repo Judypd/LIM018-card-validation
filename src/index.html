@@ -3,54 +3,66 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>CaleydoBooks</title>
+      <title>KaleydoBooks</title>
       <link rel="stylesheet" href="style.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Yeseva+One&display=swap" rel="stylesheet">
   </head>
-  <body>   
-      <section>
-          <h1 class="headTitle">Caleydo<span class="books">Books</span></h1>
-          <button id="enter">Yo quiero!</button>
+  <body>
+      <header id="header">
+        <nav class="buttonContainer">
+          <button class="navBarButton">LOG IN</button>
+          <button class="navBarButton">REGISTER</button>
+        </nav>
+      </header>   
+      <section id="firstPage">
+          <h1 class="headTitle">Kaleydo<span class="books">Books</span></h1>
+          <button id="enter">YO QUIERO!</button>
           <h3 class="otherTitle">Lleva contigo los libros de tus sueños</h3>
-          <h3 class="otherTitle">Planes con descuento!</h3>
+          <h3 class="otherTitle" id="discount">Planes con descuento!</h3>
       </section>
       
-      <main id="hidden" class="hiddenBox">
-      <section class="block1">
-        <h1 class="title">Escoge tu plan</h1>
-        <div class="inputs">
-          <input type="radio" name="plan" id="1m">
-          <label for="1m">1 mes por 15 soles</label><br>
-          <input type="radio" name="plan" id="6m">
-          <label for="6m">6 meses por 81 soles</label><br>
-          <input type="radio" name="plan" id="1y">
-          <label for="6m">1 año por 153 soles</label><br>
-        </div>
-      </section>
+      <main class="hiddenBox">
+        <div id="hidd" class="hidden">
+          <section class="block1">
+            <h1 class="title">ESCOGE TU PLAN</h1>
+            <div class="inputs">
+              <input type="radio" name="plan" id="1m">
+              <label for="1m">1 mes por 15 soles</label><br>
+              <input type="radio" name="plan" id="6m">
+              <label for="6m">6 meses por 81 soles</label><br>
+              <input type="radio" name="plan" id="1y">
+              <label for="1y">1 año por 153 soles</label><br>
+            </div>
+          </section>
 
-      <section class="block2">
-        <h1 class="title">Adquiere tu plan</h1>
-        <div class="formBox">
+          <section class="block2">
+            <h1 class="title">ADQUIERE TU PLAN</h1>
             <form class="forms">
-                
-                <label for="fname">Nombre y Apellido</label><br>
-                <input type="text" name="fname" id="fname"><br>
-                <label for="email">Correo electrónico</label><br>
-                <input type="email" name="email" id="email"><br>
-                <label for="cardnumber">Número de Tarjeta</label><br>
-                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" required><br>
-                <div id="theValidation"></div><br>
-                <label for="expiration">Vencimiento</label><br>
-                <input type="date" name="expiration" id="expiration"><br>
-                <label for="codecvv">Código de Seguridad</label><br>
-                <input type="text" placeholder="cvv" name="codecvv" id="codecvv"><br>
-                <input type="button" id="valid" value="Validar"><br>
-                <input type="reset" value="Limpiar"><br>
-                <input type="button" value="Comprar"><br>
-              
+              <div class="formBox">
+                <label for="fname">Nombre y Apellido</label>
+                <input type="text" name="fname" id="fname">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+                <label for="cardnumber">Número de Tarjeta</label>
+                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" value="" required>
+                <div id="theValidation"></div>
+                <div class="securityBox">
+                  <label for="expiration">Vencimiento</label>
+                  <input type="date" name="expiration" id="expiration">
+                  <label for="codecvv">Código de Seguridad</label>
+                  <input type="password" maxlength="3" placeholder="cvv" name="codecvv" id="codecvv">
+                </div>
+                <div class="buttons">
+                  <input type="button" id="valid" value="Validar">
+                  <input type="reset" id="clean" value="Limpiar">
+                </div>
+                <div class="buyButton">
+                    <input type="button" id="buy" value="Comprar">
+                </div>
+              </div>
             </form>
+          </section>
         </div>
-      </section>
       </main>
       <footer>
           <p>Autor: Judy Palacios</p>
