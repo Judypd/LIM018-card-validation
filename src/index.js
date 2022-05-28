@@ -9,25 +9,25 @@ document.getElementById("enter").addEventListener('click',()=> {
 
 let creditcardNumber = document.getElementById("cardNumber");
 
+document.getElementById("valid").addEventListener('click',validation); //escuchar evento para función validator
 function validation(){
     let luhnNumber = validator.isValid(creditcardNumber.value);
     creditcardNumber.value = validator.maskify(creditcardNumber.value);
       if (luhnNumber === true) {
-        document.getElementById("theValidation").innerHTML = "¡Felicidades! número de tarjeta válido";
+        document.getElementById("theValidation").innerHTML = "* ¡Felicidades! número de tarjeta válido";
         document.getElementById("theValidation").style.display='block';
     }
       else {
-        document.getElementById("theValidation").innerHTML = "Lo siento, número de tarjeta inválido";
+        document.getElementById("theValidation").innerHTML = "* Lo siento, número de tarjeta inválido";
         document.getElementById("theValidation").style.display='block';
     }
 }
 
-document.getElementById("valid").addEventListener('click',validation); //escuchar evento para función validator
-
+document.getElementById("clean").addEventListener('click',removeDiv);
 function removeDiv() {
     document.getElementById("theValidation").style.display='none';
 }
-document.getElementById("clean").addEventListener('click',removeDiv);
+
 
 
 

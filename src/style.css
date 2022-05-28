@@ -10,8 +10,8 @@ body {
 #header {
     background-image: url(caleydo.jpg);
     background-size: 50%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
-    position:static;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 1);
+    position:sticky;
     width: 100%;
     height: 12vw;
 }
@@ -110,7 +110,7 @@ body {
 .title {
     background-color:rgba(162, 247, 247, 0.77);
     color: white;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Macondo', cursive;
     font-size: 2vw;
     text-align: center;
@@ -148,33 +148,28 @@ input[type=radio] {
     accent-color: rgb(139, 89, 225); 
 }
 
-.formBox label {
-    color:rgba(0, 0, 0, 1);
-    font-family: 'Yeseva One', cursive;
-    font-size: 1.2vw;
-}
-
 .formBox {
-    background-color: rgba(181, 182, 251, 1);
-    padding: 3px;
+    background-color: rgba(181, 182, 251, 1);  
+    width: 50vw;
+    padding: 10px;
     border-radius: 30px;
-    font-family: 'Macondo', cursive;  
-    font-size: 1.2vw;     
-    min-width:30rem;
     display: flex;
     flex-direction:column;
-	justify-content:space-around;
     align-items: center;
     align-content:center;
-    justify-self:center;
     text-align: center;
 }
 
-form label {
+div label[for=fname],label[for=email],label[for=cardnumber] {
+    color:rgba(0, 0, 0, 1);
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.2vw;
     align-items: center;
     border-radius: 3px;
     padding: 10px;
     margin: 10px;
+    width: 80%;
+    height: 2em;
 }
 
 #fname,#email,#cardNumber{
@@ -187,27 +182,90 @@ form label {
 
 }
 
-.securityBox {
+#theValidation {
+    font-family: 'Macondo', cursive;
+    font-weight: 3px;
+    font-style: italic;
+    padding: 5px;
+    justify-content: center;
+    width: 70%;
+    height: 2em;
+}
 
+.securityBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+div label[for=expiration],label[for=codecvv] {
+    color:rgba(0, 0, 0, 1);
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.2vw;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    height: 2em;
+}
+
+#expiration {
+    border-radius: 7px;
+    border: none;
+    padding: 3px;
+    margin: 4px;
+    width: 100%;
+    height: 2.5em;
+}
+
+#codecvv {
+    border-radius: 7px;
+    border: none;
+    padding: 3px;
+    margin: 4px;
+    width: 100%;
+    height: 2.5em;
+}
+
+.b1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 6em;
+    padding: 0px;
+    border: 0px;
+}
+
+.b2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 6em;
+    padding: 0px;
+    border: 0px;
+}
+
+img {
+    width: 430px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 .buttons {
-    background-color: blueviolet;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items:stretch;
     align-content: center;
+    width: 70%;
     height: 80px;
-}
-
-.buttons > input {
-    flex: 1 40% 0;
-}
-
-.buyButton > input {
-    flex: 1 50% 0;
 }
 
 #valid,#clean {
@@ -220,8 +278,8 @@ form label {
     padding: 0.5vw;
     border-radius: 6px;
     border-style: none;
-    width: 210px;
-    height: 34px;    
+    width: 15vw;
+    height: 3vw;    
 }
 
 #buy {
@@ -229,18 +287,18 @@ form label {
     color: rgba(255, 255, 255, 1);
     text-shadow: 2px 2px 2px black;
     font-family: 'Yeseva One', cursive;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     margin: 5px;
     padding: 0.5vw;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     border-radius: 50px;
-    border-style: none;
-    width: 165px;
-    height: 34px;
+    width: 11vw;
+    height: 4vw;
 }
 
-#valid,#clean,.buyButton :hover {
+#valid:hover, #clean:hover, #buy:hover {
     cursor: pointer;
+    transform: scale(1.03,1.03);
 }
 
 .rights {

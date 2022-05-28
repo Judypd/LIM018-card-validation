@@ -40,18 +40,23 @@
             <form class="forms">
               <div class="formBox">
                 <label for="fname">Nombre y Apellido</label>
-                <input type="text" name="fname" id="fname">
+                <input type="text" name="fname" id="fname" placeholder="Escriba su nombre">
                 <label for="email">Correo electrónico</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Escriba su correo">
                 <label for="cardnumber">Número de Tarjeta</label>
-                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" value="" required>
+                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" value="">
                 <div id="theValidation"></div>
                 <div class="securityBox">
-                  <label for="expiration">Vencimiento</label>
+                  <div class="b1">
+                  <label for="expiration">Expiración</label>
                   <input type="date" name="expiration" id="expiration">
-                  <label for="codecvv">Código de Seguridad</label>
+                  </div>
+                  <div class="b2">
+                  <label for="codecvv">Código cvv</label>
                   <input type="password" maxlength="3" placeholder="cvv" name="codecvv" id="codecvv">
+                  </div>
                 </div>
+                <div><img src="tarjetasdecredito.png" alt="cards"></div>
                 <div class="buttons">
                   <input type="button" id="valid" value="Validar">
                   <input type="reset" id="clean" value="Limpiar">
@@ -67,7 +72,7 @@
       <footer>
           <p>Autor: Judy Palacios</p>
           <a href="mailto:palacios.carolina0@gmail.com">palacios.carolina0@gmail.com</a>
-          <p class="rights">Todos los derechos reservados &copy</p>
+          <p class="rights">Todos los derechos reservados  &copy</p>
       </footer>
   <script src="index.js" type="module"></script>
   </body>
