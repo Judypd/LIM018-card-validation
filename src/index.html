@@ -40,20 +40,20 @@
             <form class="forms">
               <div class="formBox">
                 <label for="fname">Nombre y Apellido</label>
-                <input type="text" name="fname" id="fname" placeholder="Escriba su nombre">
+                <input type="text" name="fname" id="fname" placeholder="Escriba su nombre" required>
                 <label for="email">Correo electrónico</label>
-                <input type="email" name="email" id="email" placeholder="Escriba su correo">
+                <input type="email" name="email" id="email" placeholder="Escriba su correo" required>
                 <label for="cardnumber">Número de Tarjeta</label>
-                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" value="">
+                <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" name="cardNumber" id="cardNumber" value="" required>
                 <div id="theValidation"></div>
                 <div class="securityBox">
                   <div class="b1">
                   <label for="expiration">Expiración</label>
-                  <input type="date" name="expiration" id="expiration">
+                  <input type="month" name="expiration" id="expiration" required>
                   </div>
                   <div class="b2">
                   <label for="codecvv">Código cvv</label>
-                  <input type="password" maxlength="3" placeholder="cvv" name="codecvv" id="codecvv">
+                  <input type="password" maxlength="3" placeholder="cvv" name="codecvv" id="codecvv" required>
                   </div>
                 </div>
                 <div><img src="tarjetasdecredito.png" alt="cards"></div>
@@ -62,7 +62,7 @@
                   <input type="reset" id="clean" value="Limpiar">
                 </div>
                 <div class="buyButton">
-                    <input type="button" id="buy" value="Comprar">
+                    <input type="submit" id="buy" value="Comprar">
                 </div>
               </div>
             </form>

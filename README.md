@@ -14,9 +14,7 @@ Plataforma que simula una biblioteca tradicional pero en línea, en donde el usu
   * El usuario ya no se preocupa por el espacio físico necesario para colocar sus libros o el peso de estos al querer llevarlos a un viaje o sus vacaciones.
   * Pagar suscripción de manera segura y rápida con su tarjeta de crédito.
  
- ### iii. Primer prototipo en papel
- 
- ### iv. Feedback
+ ### iii. Feedback
  No pude recibir feedback de mi primer prototipo en papel, pero sí de mi primera interfaz de la página web.
  Las recomendaciones dadas fueron:
    * No saturar con color el fondo ya que el contenido no hace buen contraste.

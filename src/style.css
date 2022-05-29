@@ -252,8 +252,7 @@ div label[for=expiration],label[for=codecvv] {
 }
 
 img {
-    width: 430px;
-    height: 50px;
+    width: 45%;
     border-radius: 5px;
 }
 
