@@ -1,3 +1,29 @@
+# KaleydoBooks - card validation
+Plataforma que simula una biblioteca tradicional pero en línea, en donde el usuario primero debe ingresar los datos de su tarjeta de crédito, los cuales serán validados para poder realizar la adquisición de un plan.
+
+## Investigación UX
+
+ ### i. Usuarios:
+ Adultos apasionados por la lectura u que gozan de esta como medio de relajación.
+   ### * Objetivos del usuario en relación con mi producto:
+     - Tener acceso ilimitado a libros de gran variedad de acuerdo al plan elegido y en cualquier momento y lugar.
+     - Adquisición del plan de manera segura  para el usuario y aplicación web, mediante la validación del número 
+       de la tarjeta y protección de sus datos sensibles.
+     
+ ### ii. ¿Cómo mi producto soluciona los problemas/necesidades de dichos usuarios?
+  * El usuario ya no se preocupa por el espacio físico necesario para colocar sus libros o el peso de estos al querer llevarlos a un viaje o sus vacaciones.
+  * Pagar suscripción de manera segura y rápida con su tarjeta de crédito.
+ 
+ ### iii. Primer prototipo en papel
+ 
+ ### iv. Feedback
+ No pude recibir feedback de mi primer prototipo en papel, pero sí de mi primera interfaz de la página web.
+ Las recomendaciones dadas fueron:
+   * No saturar con color el fondo ya que el contenido no hace buen contraste.
+   * Utilizar mejor el espacio de la zona de llenado de formulario porque todo se ve muy pegado.
+   * Cambiar color de los títulos para facilitar la lectura.
+     
+
 # Tarjeta de crédito válida
 
 ## Índice
